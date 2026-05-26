@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>何强 - 工业设计作品集</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">DESIGN<span>.</span>PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#skills">专业技能</a></li>
+            <li><a href="#works">作品集</a></li>
+            <li><a href="#contact">联系我</a></li>
+            <li><a href="resume.html">简历</a></li>
+        </ul>
+    </nav>
+    
+    <div class="banner-container">
+        <div class="banner-slide active">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&h=800&fit=crop" alt="">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2></h2>
+                <h1>何强</h1>
+                <p>融合艺术与科技</p>
+                <a href="#about" class="btn">了解更多</a>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1600&h=800&fit=crop" alt="">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2></h2>
+                <h1>何强</h1>
+                <p>追求完美用户体验</p>
+                <a href="#about" class="btn">了解更多</a>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1600&h=800&fit=crop" alt="">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h2></h2>
+                <h1>何强</h1>
+                <p>用设计改变世界</p>
+                <a href="#about" class="btn">了解更多</a>
+            </div>
+        </div>
+        <div class="banner-arrows">
+            <button class="banner-arrow" onclick="prevSlide()">&lsaquo;</button>
+            <button class="banner-arrow" onclick="nextSlide()">&rsaquo;</button>
+        </div>
+        <div class="banner-dots">
+            <div class="banner-dot active" onclick="goToSlide(0)"></div>
+            <div class="banner-dot" onclick="goToSlide(1)"></div>
+            <div class="banner-dot" onclick="goToSlide(2)"></div>
+        </div>
+    </div>
+    
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">关于我</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>何强</p>
+                <p>热爱工业设计的学生，专注于产品设计与用户体验研究</p>
+                <p>正在寻找实习机会，期待在设计行业学习成长。</p>
+                <p><a href="resume.html" class="btn" style="margin-top:1rem;">查看完整简历</a></p>
+            </div>
+            <div class="about-image">
+                <img src="https://s3.bmp.ovh/2026/05/25/KSv9nEZB.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <span class="section-tag">Skills</span>
+            <h2 class="section-title">专业技能</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-title">产品设计</h3>
+                <div class="skill-bar"><div class="skill-progress" data-level="90"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🦏</div>
+                <h3 class="skill-title">Rhino建模</h3>
+                <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">✨</div>
+                <h3 class="skill-title">KeyShot渲染</h3>
+                <div class="skill-bar"><div class="skill-progress" data-level="88"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🖌️</div>
+                <h3 class="skill-title">Photoshop</h3>
+                <div class="skill-bar"><div class="skill-progress" data-level="82"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📐</div>
+                <h3 class="skill-title">SketchUp</h3>
+                <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎯</div>
+                <h3 class="skill-title">Figma</h3>
+                <div class="skill-bar"><div class="skill-progress" data-level="78"></div></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="works" id="works">
+        <div class="section-header">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">作品集</h2>
+        </div>
+        <div class="works-grid">
+            <div class="work-card" onclick="window.location.href='work-0.html'">
+                <div class="work-image">
+                    <img src="https://s3.bmp.ovh/2026/05/27/2wf9sOE0.jpg" alt="交互图标设计">
+                    <div class="work-overlay"><span>查看详情 →</span></div>
+                </div>
+                <div class="work-info">
+                    <span class="work-category">交互设计</span>
+                    <h3 class="work-title">交互图标设计</h3>
+                    <p class="work-desc">安卓桌面图标</p>
+                </div>
+            </div>
+            <div class="work-card" onclick="window.location.href='work-1.html'">
+                <div class="work-image">
+                    <img src="https://s3.bmp.ovh/2026/05/27/b5CVWe9d.png" alt="室内设计平面图">
+                    <div class="work-overlay"><span>查看详情 →</span></div>
+                </div>
+                <div class="work-info">
+                    <span class="work-category">室内设计</span>
+                    <h3 class="work-title">室内设计平面图</h3>
+                    <p class="work-desc">室内设计的ca平面图</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-tag">Contact</span>
+            <h2 class="section-title">联系我</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-text"><strong>邮箱</strong><span>2133181070@qq.com</span></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-text"><strong>电话</strong><span>19583725405</span></div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text"><strong>地址</strong><span>西南科技大学</span></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="copyright">© 2025 何强. All Rights Reserved.</div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
